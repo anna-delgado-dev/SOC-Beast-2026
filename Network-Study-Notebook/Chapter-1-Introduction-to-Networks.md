@@ -44,106 +44,87 @@ Beast Mode Experiment 2026 – 3-week full focus on Network
 ### Common Server Types
 - **File Server**: Stores and shares files and folders.
 - **Mail Server**: Sends, receives, and stores emails (e.g. Gmail).
-- **Print Server**: Manages and queues print jobs for network printers.
-- **Web Server**: Hosts websites and web applications (e.g. Apache, Nginx).
+- **Print Server**: Manages print jobs for network printers.
+- **Web Server**: Hosts websites and web applications.
 - **Application Server**: Runs business applications.
 - **Proxy Server**: Acts as intermediary for security and performance.
 - **Fax / Telephony Server**: Handles fax or VoIP calls.
 
 ### Host
 - Any device with an IP address that can communicate using TCP/IP.
-- Broad term: includes workstations, servers, laptops, smartphones, printers, IoT devices, etc.
+- Broad term: workstations, servers, laptops, smartphones, printers, IoT devices, etc.
 
 ### TCP/IP
 - Standard protocol suite of the Internet and most modern networks.
-- **TCP** = reliable, ordered data delivery (connection-oriented).
+- **TCP** = reliable, ordered data delivery.
 - **IP** = addressing and routing of packets.
-- Used by every host with an IP address.
 
 ## Network Types
 
 ### PAN (Personal Area Network)
-- Smallest network type. Connects personal devices in short range.
-- Technologies: Bluetooth, USB, Ethernet.
+- Smallest network. Connects personal devices in short range (Bluetooth, USB, Ethernet).
 
 ### CAN (Campus Area Network)
-- Covers a university or corporate campus. Interconnects multiple LANs.
-- Usually includes Wi-Fi for roaming users.
+- Covers a university or corporate campus. Interconnects multiple LANs with Wi-Fi for roaming.
 
 ### MAN (Metropolitan Area Network)
-- Covers a city or campus. Connects multiple buildings.
-- Usually provided by a carrier (“concentrated WAN”).
+- Covers a city or campus. Connects multiple buildings (“concentrated WAN”).
 
 ### WAN (Wide Area Network)
-- Covers large geographic areas. Connects multiple LANs using routers and carrier links.
-- Slower and more expensive than LAN/MAN.
+- Covers large geographic areas. Connects multiple LANs using routers. Slower and more expensive.
 
 ### Internet
-- Largest distributed WAN in the world. Connects millions of networks via routers.
+- Largest distributed WAN. Connects millions of networks via routers.
 
 ### SAN (Storage Area Network)
-- Dedicated high-speed network for storage traffic only.
-- Connects servers to centralized storage arrays.
-- Used mainly in data centers.
-- Main protocols: Fibre Channel (FC) or FCoE.
+- Dedicated high-speed network for storage only. Used in data centers (Fibre Channel / FCoE).
 
 ### SD-WAN (Software-Defined WAN)
-- Modern flexible WAN technology.
-- Manages multiple connection types (MPLS, LTE, broadband) with software.
-- Allows real-time optimization.
+- Modern flexible WAN. Manages multiple connections with software for real-time optimization.
 
 ### MPLS (Multi-Protocol Label Switching)
-- Advanced routing technology for WANs.
-- Provides high performance, traffic prioritization, redundancy, and flexibility.
+- Advanced routing for WANs. Provides prioritization, redundancy and flexibility.
 
 ## Network Architecture
 
 ### Peer-to-Peer (P2P)
-- All devices are equal – no central authority.
-- Each device can act as both client and server.
-- Low security. Only suitable for small networks (< 10-20 users).
+- All devices are equal. Each can act as client and server.
+- Low security. Only for small networks.
 
 ### Client-Server
-- Dedicated server manages the network, security, and resources.
-- Clients only request services.
-- Server is never used as a normal workstation.
-- High security and scalability. Used in most professional environments.
+- Dedicated server manages security and resources.
+- Clients only request services. Server never used as workstation.
+- High security and scalability.
 
 ## Physical Network Topologies
 
 ### Bus Topology
-- All devices on a single cable. Simple but outdated. Single point of failure.
+- All devices on a single cable. Outdated, single point of failure.
 
 ### Point-to-Point
-- Direct connection between two devices. Common in WAN links.
+- Direct link between two devices.
 
 ### Hub-and-Spoke (Star Topology)
-- All devices connect to a central switch. Most common in modern LANs.
+- All devices connect to a central switch. Most common today.
 
 ### Mesh Topology
-- Every device connects to every other. High redundancy, very expensive.
-- Partial mesh is more common.
+- Every device connects to every other. High redundancy, expensive.
 
 ### Spine-and-Leaf Topology
-- Modern data center design.
-- Leaf switches connect to servers and endpoints.
-- Spine switches connect only to leaf switches.
-- Excellent for east-west traffic and scalability.
+- Modern data center design. Leaf switches connect servers, Spine switches connect leaves. Excellent for east-west traffic.
 
-### Three-Tiered Hierarchical Model
-- **Access Layer**: Connects end-user devices.
-- **Distribution Layer**: Aggregates traffic and applies policies.
-- **Core Layer**: High-speed backbone between distribution layers.
+### Three-Tiered Model
+- Access Layer → Distribution Layer → Core Layer.
 
 ### Traffic Flows
-- **North-South Traffic**: Traffic entering or leaving the network (to Internet, cloud, external users).
-- **East-West Traffic**: Server-to-server traffic inside the data center.
+- **North-South**: Traffic to/from Internet or external.
+- **East-West**: Server-to-server inside the data center.
 
 ## Key Concepts
-- **Network Backbone**: Main high-speed path between network segments.
-- **Network Segments**: Parts of the network separated for performance or security.
-- **Virtual Networking**: VLANs, VXLAN, SDN (software-defined networks).
-- **Selecting the Right Topology**: Balance between cost, scalability, and redundancy (Star for small offices, Spine-and-Leaf for large data centers).
+- **Network Backbone**: Main high-speed path.
+- **Network Segments**: Divided parts for performance/security.
+- **Virtual Networking**: VLANs, VXLAN, SDN.
+- **Selecting Topology**: Balance cost, scalability and redundancy.
 
 ---
 
