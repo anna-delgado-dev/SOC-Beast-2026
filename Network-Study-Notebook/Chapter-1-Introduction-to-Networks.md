@@ -1,20 +1,21 @@
 # Network Study Notebook
 **CompTIA Network+ (N10-009) – Personal Study Notes**
 
-Clean, concise notes focused on exam objectives and real-world cybersecurity applications.
+Clean and concise notes focused on exam objectives and real-world cybersecurity applications.  
+**Beast Mode Experiment 2026** – 3-week Network focus.
 
 ## Chapter 1 – Introduction to Networks
 
 ### 1. What is a Network?
-- Two or more connected computers that can share resources (data, applications, printers).
+- Two or more connected devices that share resources (data, applications, printers).
 - Hosts communicate using binary data (packets).
 
 ### 2. Local Area Network (LAN)
-- Network that connects devices within a small geographic area (home, office, or single building).
-- Allows fast sharing of files, printers, and resources with high speed and low latency.
+- Connects devices within a small geographic area (home, office, single building).
+- Enables fast sharing of files, printers, and resources with high speed and low latency.
 
 ### Latency
-- Time for a packet to travel from source to destination and back (round-trip).
+- Time a packet takes to travel from source to destination and back (round-trip).
 - Measured in milliseconds (ms).
 - Low latency = fast and responsive network.
 - High latency = performance issues.
@@ -29,3 +30,6 @@ Clean, concise notes focused on exam objectives and real-world cybersecurity app
 
 ---
 
+**Status:** In progress  
+**Pages covered:** 2-3  
+**Next:** Finish Chapter 1 (topologies, peer-to-peer, etc.)
