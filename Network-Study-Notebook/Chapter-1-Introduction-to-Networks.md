@@ -1,102 +1,151 @@
-# Day 4 – Network+ Focus (26 March 2026)
+# Chapter 1 – Introduction to Networks
 
-**Study Block 1** – CompTIA Network+ Chapter 1: Introduction to Networks  
-**Time spent**: ~4 hours (2 hours lectura + apuntes + ejercicio)
+**CompTIA Network+ (N10-009) – Personal Study Notes**  
+Beast Mode Experiment 2026 – 3-week full focus on Network
 
-### Progress
-- Completado **Chapter 1** entero.
-- Tomados apuntes claros y organizados de todo el capítulo.
-- Entendido conceptos clave: componentes de red, tipos de redes, arquitecturas y topologías.
-
-### Chapter 1 – Apuntes Resumidos (Clean Version)
-
-**1. What is a Network?**  
-- Two or more connected devices that share resources (data, applications, printers).  
+## 1. What is a Network?
+- Two or more connected devices that share resources (data, applications, printers).
 - Hosts communicate using binary data (packets).
 
-**2. Local Area Network (LAN)**  
-- Connects devices within a small geographic area (home, office, single building).  
+## 2. Local Area Network (LAN)
+- Connects devices within a small geographic area (home, office, single building).
 - High speed and low latency.
 
-**Latency**  
-- Round-trip time for a packet to travel from source to destination and back.  
-- Measured in milliseconds (ms).  
-- Low latency = fast network | High latency = performance problems.
+## Latency
+- Round-trip time for a packet to travel from source to destination and back.
+- Measured in milliseconds (ms).
+- Low latency = fast and responsive network.
+- High latency = performance problems.
+- Example: `ping 8.8.8.8` → 15 ms (good) vs 250 ms (bad).
 
-**Workgroup**  
-- Group of devices in the same network segment with no central security.  
-- Each device manages its own users and resources. Low security.
+## Workgroup
+- Group of devices in the same network segment.
+- No central security or trust relationship.
+- Each device manages its own users, passwords, and shared resources.
+- Common in home/small office networks.
+- Low security: manual authentication, easy lateral movement if compromised.
 
-**Common Network Components**
+## Common Network Components
 
-**Workstation**  
-- High-performance computer (multiple CPUs, large RAM, powerful GPU).  
-- Used by security analysts, developers, etc. Acts as client.
+### Workstation
+- High-performance computer for demanding tasks.
+- Multiple CPUs, large RAM, and powerful GPU.
+- Used by security analysts, developers, video editors, etc.
+- Acts as a client in the network.
 
-**CPU**  
+### CPU (Central Processing Unit)
 - The brain of the computer. Executes instructions and calculations.
+- Workstations often use multi-core CPUs.
 
-**Server**  
-- Powerful dedicated computer/software that provides services to clients.
+### Server
+- Powerful computer or software that provides specialized services to clients.
+- Dedicated and more reliable than normal workstations.
 
-**Common Server Types**  
-- File Server (stores/shares files)  
-- Mail Server (emails)  
-- Print Server (printing jobs)  
-- Web Server (websites)  
-- Application Server (business apps)  
-- Proxy Server (security & performance)  
-- Fax/Telephony Server (fax or VoIP)
+### Common Server Types
+- **File Server**: Stores and shares files and folders.
+- **Mail Server**: Sends, receives, and stores emails (e.g. Gmail).
+- **Print Server**: Manages and queues print jobs for network printers.
+- **Web Server**: Hosts websites and web applications (e.g. Apache, Nginx).
+- **Application Server**: Runs business applications.
+- **Proxy Server**: Acts as intermediary for security and performance.
+- **Fax / Telephony Server**: Handles fax or VoIP calls.
 
-**Host**  
-- Any device with an IP address using TCP/IP (workstations, servers, phones, printers, IoT…).
+### Host
+- Any device with an IP address that can communicate using TCP/IP.
+- Broad term: includes workstations, servers, laptops, smartphones, printers, IoT devices, etc.
 
-**TCP/IP**  
-- Standard protocol suite of modern networks.  
-- TCP = reliable data delivery | IP = addressing and routing.
+### TCP/IP
+- Standard protocol suite of the Internet and most modern networks.
+- **TCP** = reliable, ordered data delivery (connection-oriented).
+- **IP** = addressing and routing of packets.
+- Used by every host with an IP address.
 
-**Network Types**  
-- **PAN**: Smallest (personal devices, Bluetooth/USB).  
-- **CAN**: Campus (university/corporate buildings).  
-- **MAN**: City level (concentrated WAN).  
-- **WAN**: Large areas, uses routers, slower/expensive.  
-- **Internet**: Largest distributed WAN.  
-- **SAN**: Dedicated storage network for data centers (Fibre Channel).  
-- **SD-WAN**: Flexible modern WAN with software control.  
-- **MPLS**: Advanced routing with prioritization and redundancy.
+## Network Types
 
-**Network Architecture**  
-- **Peer-to-Peer (P2P)**: All devices equal, low security, only small networks.  
-- **Client-Server**: Dedicated server manages security and resources. High security and scalability.
+### PAN (Personal Area Network)
+- Smallest network type. Connects personal devices in short range.
+- Technologies: Bluetooth, USB, Ethernet.
 
-**Physical Network Topologies**  
-- **Bus**: Single cable – outdated, single point of failure.  
-- **Point-to-Point**: Direct link between two devices.  
-- **Star (Hub-and-Spoke)**: Most common – all connect to central switch.  
-- **Mesh**: Every device connected to every other – high redundancy, expensive.  
-- **Spine-and-Leaf**: Modern data center (Leaf → servers, Spine → leaves). Excellent for east-west traffic.
+### CAN (Campus Area Network)
+- Covers a university or corporate campus. Interconnects multiple LANs.
+- Usually includes Wi-Fi for roaming users.
 
-**Three-Tiered Model**  
-- Access Layer → Distribution Layer → Core Layer.
+### MAN (Metropolitan Area Network)
+- Covers a city or campus. Connects multiple buildings.
+- Usually provided by a carrier (“concentrated WAN”).
 
-**Traffic Flows**  
-- **North-South**: Traffic to/from Internet or external.  
-- **East-West**: Server-to-server inside the data center.
+### WAN (Wide Area Network)
+- Covers large geographic areas. Connects multiple LANs using routers and carrier links.
+- Slower and more expensive than LAN/MAN.
 
-**Key Concepts**  
-- Network Backbone: Main high-speed path.  
-- Network Segments: Divided parts for performance/security.  
-- Virtual Networking: VLANs, VXLAN, SDN.  
-- Selecting Topology: Balance cost vs scalability vs redundancy.
+### Internet
+- Largest distributed WAN in the world. Connects millions of networks via routers.
 
-### Network Study Notebook
-→ [Network-Study-Notebook](./Network-Study-Notebook/)  
-→ [Chapter 1 – Introduction to Networks](./Network-Study-Notebook/Chapter-1-Introduction-to-Networks.md)
+### SAN (Storage Area Network)
+- Dedicated high-speed network for storage traffic only.
+- Connects servers to centralized storage arrays.
+- Used mainly in data centers.
+- Main protocols: Fibre Channel (FC) or FCoE.
 
-**Personal Reflection**  
-Hoy terminé el primer capítulo completo. Los conceptos más importantes (Client-Server vs P2P, Spine-and-Leaf, North-South vs East-West traffic) ya están claros. Los apuntes quedan limpios y listos para repasar y mostrar en portfolio.
+### SD-WAN (Software-Defined WAN)
+- Modern flexible WAN technology.
+- Manages multiple connection types (MPLS, LTE, broadband) with software.
+- Allows real-time optimization.
 
-**Status**: Chapter 1 ✅ Completed  
-**Tomorrow**: Review notes + start Chapter 2 + TryHackMe Network Fundamentals
+### MPLS (Multi-Protocol Label Switching)
+- Advanced routing technology for WANs.
+- Provides high performance, traffic prioritization, redundancy, and flexibility.
 
-**Total study time today**: ~4 hours (planned 6 hours)
+## Network Architecture
+
+### Peer-to-Peer (P2P)
+- All devices are equal – no central authority.
+- Each device can act as both client and server.
+- Low security. Only suitable for small networks (< 10-20 users).
+
+### Client-Server
+- Dedicated server manages the network, security, and resources.
+- Clients only request services.
+- Server is never used as a normal workstation.
+- High security and scalability. Used in most professional environments.
+
+## Physical Network Topologies
+
+### Bus Topology
+- All devices on a single cable. Simple but outdated. Single point of failure.
+
+### Point-to-Point
+- Direct connection between two devices. Common in WAN links.
+
+### Hub-and-Spoke (Star Topology)
+- All devices connect to a central switch. Most common in modern LANs.
+
+### Mesh Topology
+- Every device connects to every other. High redundancy, very expensive.
+- Partial mesh is more common.
+
+### Spine-and-Leaf Topology
+- Modern data center design.
+- Leaf switches connect to servers and endpoints.
+- Spine switches connect only to leaf switches.
+- Excellent for east-west traffic and scalability.
+
+### Three-Tiered Hierarchical Model
+- **Access Layer**: Connects end-user devices.
+- **Distribution Layer**: Aggregates traffic and applies policies.
+- **Core Layer**: High-speed backbone between distribution layers.
+
+### Traffic Flows
+- **North-South Traffic**: Traffic entering or leaving the network (to Internet, cloud, external users).
+- **East-West Traffic**: Server-to-server traffic inside the data center.
+
+## Key Concepts
+- **Network Backbone**: Main high-speed path between network segments.
+- **Network Segments**: Parts of the network separated for performance or security.
+- **Virtual Networking**: VLANs, VXLAN, SDN (software-defined networks).
+- **Selecting the Right Topology**: Balance between cost, scalability, and redundancy (Star for small offices, Spine-and-Leaf for large data centers).
+
+---
+
+**Status:** Chapter 1 Completed  
+**Next:** Chapter 2 + TryHackMe Network Fundamentals
