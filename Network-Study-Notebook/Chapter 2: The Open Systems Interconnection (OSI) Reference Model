@@ -1,0 +1,121 @@
+# Day 5 – Chapter 2: The Open Systems Interconnection (OSI) Reference Model  
+**CompTIA Network+ Study – Beast Mode Experiment**  
+
+**Date:** 27 March 2026  
+**Author:** Anna Delgado
+**File:** Day-5_Chapter-2_OSI-Reference-Model.md  
+ 
+
+---
+
+## Executive Summary
+
+This document summarizes **Chapter 2** of the CompTIA Network+ Official Study Guide, focusing on the OSI Reference Model and Internetworking Models. It covers the seven-layer architecture, key functions of each layer, encapsulation, and critical Transport layer concepts such as connection-oriented communication, flow control, and windowing.  
+
+The OSI model serves as a conceptual framework that enables interoperability between different vendors and simplifies network design, troubleshooting, and protocol development.
+
+---
+
+## 1. OSI Reference Model Overview
+
+The **Open Systems Interconnection (OSI) Reference Model** is a conceptual, hierarchical framework developed by the International Organization for Standardization (ISO). It divides network communication into **seven independent layers** to standardize how data moves from one device to another.
+
+**Key Benefits of the Layered Approach:**
+- Simplifies complex network communication
+- Enables independent development and troubleshooting
+- Promotes vendor interoperability
+- Allows changes in one layer without affecting others
+- Provides a common language for networking professionals
+
+
+---
+
+## 2. The Seven Layers of the OSI Model
+
+### Layer 7 – Application Layer
+- Closest to the end user  
+- Provides network services directly to applications  
+- Acts as an interface between user software and the network  
+- Does **not** contain the applications themselves (e.g., Chrome uses this layer)  
+- Common protocols: HTTP/HTTPS, DNS, FTP, SMTP, SSH, SFTP, TFTP
+
+### Layer 6 – Presentation Layer
+- Responsible for data representation and translation  
+- Handles: data translation (ASCII ↔ EBCDIC, Unicode), compression/decompression, encryption/decryption (SSL/TLS), and formatting  
+- Ensures data from one system is readable by another
+
+### Layer 5 – Session Layer
+- Manages session establishment, maintenance, and termination  
+- Provides dialogue control:  
+  - Simplex (one direction)  
+  - Half-duplex (both directions, one at a time)  
+  - Full-duplex (both directions simultaneously)  
+- Keeps multiple application sessions separate (e.g., multiple browser tabs)
+
+### Layer 4 – Transport Layer
+- Provides end-to-end data delivery between hosts  
+- Segments and reassembles data  
+- Handles multiplexing and hides network details from upper layers  
+- Main protocols: TCP (reliable) and UDP (connectionless)
+
+**Key Transport Layer Concepts:**
+- **Connection-Oriented Communication**: Establishes a virtual circuit before data transfer (primarily TCP).  
+- **Three-Way Handshake**:  
+  1. Sender sends **SYN**  
+  2. Receiver replies with **SYN-ACK**  
+  3. Sender sends **ACK**  
+- **Flow Control**: Prevents sender from overwhelming receiver’s buffer.  
+- **Windowing**: Receiver advertises window size (bytes/segments) it can accept before acknowledgment.  
+- **Acknowledgement (ACK)**: Confirms successful receipt of segments; triggers retransmission if missing.
+
+### Layer 3 – Network Layer
+- Handles logical addressing (IP addresses) and routing  
+- Determines best path for packets across networks  
+- PDU: Packet
+
+### Layer 2 – Data Link Layer
+- Provides node-to-node delivery on the same network segment  
+- Handles framing, physical addressing, and error detection  
+- Divided into two sublayers:  
+  - **Logical Link Control (LLC)**: Interface to Network layer, flow control, error control, protocol multiplexing  
+  - **Media Access Control (MAC)**: Controls access to physical medium, uses 48-bit MAC addresses
+
+### Layer 1 – Physical Layer
+- Transmits raw bits over the physical medium (cables, wireless)  
+- Defines electrical, mechanical, and procedural specifications  
+- PDU: Bits  
+- Includes modulation techniques (converting bits into signals)
+
+---
+
+## 3. Encapsulation & De-encapsulation
+
+**Encapsulation**: As data moves down the OSI stack, each layer adds its own header (and sometimes trailer), creating nested PDUs.  
+**De-encapsulation**: At the receiving device, each layer removes its header and passes the data up to the layer above.
+
+**PDU Names by Layer:**
+- Layers 7–5: Data  
+- Layer 4: Segment / Datagram  
+- Layer 3: Packet  
+- Layer 2: Frame  
+- Layer 1: Bits
+
+---
+
+## 4. Internetworking Models
+
+The OSI model and the TCP/IP model are the two primary internetworking models. They allow devices from different vendors and operating systems to communicate seamlessly through standardized layers and protocols.
+
+---
+
+## References
+- CompTIA Network+ Official Study Guide (Chapter 2)  
+- OSI Reference Model – ISO/IEC 7498-1
+
+---
+
+**End of Document**  
+**Prepared by:** [Ana Delgado] – Aspiring SOC Analyst / Junior Pentester  
+**Date:** 27 March 2026  
+
+---
